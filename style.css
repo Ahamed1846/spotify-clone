@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: DM Sans;
+    color: white;
+}
+body{
+    background-color: rgb(39, 39, 39);
+}
+#webpage{
+    display: flex;
+}
+#navBar{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-left: 15px;
+    width:250px;
+}
+#logo{
+    margin-bottom: 10px;
+}
+.navElement{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.icon{
+    width: 20px;
+}
+.iconText{
+    margin-left: 15px;
+    font-weight: bold;
+}
+#plus{
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    background-image: url(./assets/object3.png);
+    border-radius: 2px;
+    padding: 5px 12px 5px 12px;
+}
+#heart{
+    background-image: url(./assets/object1.png);
+    padding: 10px 7px 5px 9px;
+    border-radius: 2px;
+}
+#object4{
+    width: 35px;
+    height: 35px;
+}
+#mainpage{
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+#header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#profilePic{
+    border-radius: 50%;
+    width: 30px;
+    margin-right: 8px;
+    margin-left: 3px;
+}
+#profile{
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    background-color: black;
+    border-radius: 20px;
+}
+.playlist{
+    display: flex;
+    flex-wrap: wrap;
+}
+#heartbg{
+    background-image: url(./assets/object1.png);
+    padding: 21px 19px 21px 23px;
+    border-radius: 5px 0px 0px 5px;
+}
+.sublist{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.playlistProfile{
+    width: 70px;
+}
+.playlistName{
+    font-weight: 600;
+    height: 70px;
+    width: 200px;
+    margin-right: 30px;
+    box-sizing: border-box;
+    background-color: rgb(66, 66, 66);
+    border-radius:0px 5px 5px 0px;
+    padding: 25px 58px 25px 29px;
+}
+#text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#textRight{
+    color: gray;
+}
+.img{
+    width: 150px;
+    margin-bottom: 5px;
+}
+.artist{
+    font-size: small;
+    color: grey;
+    margin-top: 3px;
+}
+.card{
+    background-color: rgb(22, 21, 21);
+    padding: 21px 16px 18px 15px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+}
+#song{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#musicplayer{
+    height: 75px;
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(22, 21, 21);
+}
+@media only screen and (max-width: 800px) {
+    .none{
+        display: none;
+    }
+    #song{
+        display: none;
+    }
+    #musicplayer{
+        justify-content: space-around;
+    }
+    .playlist{
+        justify-content: space-around;
+    }
+}
